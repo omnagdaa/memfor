@@ -1,0 +1,25 @@
+[project]
+name = "memtesting"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pycryptodome>=3.23.0",
+    "pyinstaller>=6.18.0",
+    "pyqt6>=6.10.2",
+    "sqlalchemy>=2.0.46",
+    "volatility3>=2.27.0",
+    "yara-python>=4.5.4",
+]
+
+[project.scripts]
+memtesting = "memtesting:main"
+
+[build-system]
+requires = ["uv_build>=0.9.27,<0.10.0"]
+build-backend = "uv_build"
+
+
+[tool.uv]
+package=false
